@@ -61,14 +61,14 @@
 }
 
 .header__nav {
-    @include mediaTablet {
+    @include mediaMobileS {
         display: none;
     }
 }
 
 .header__nav-btn {
     display: none;
-    @include mediaTablet {
+    @include mediaMobileS {
         display: block;
     }
 }
@@ -95,14 +95,13 @@
 }
 
 .header__footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     gap: 30px;
+    justify-content: center;
 
     @include mediaTablet {
-        display: flex;
         flex-direction: column;
+        row-gap: 25px;
         align-items: center;
-        row-gap: 30px;
     }
 }

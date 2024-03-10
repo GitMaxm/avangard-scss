@@ -22,3 +22,14 @@ img {
 	font-size: 30px;
 	color: var(--text-color);
 }
+
+.title-2 {
+	font-size: 36px;
+	font-family: var(--font-accent);
+	color: var(--accent);
+	font-weight: 700;
+
+	@include mediaTablet {
+		font-size: 28px;
+	}
+}
