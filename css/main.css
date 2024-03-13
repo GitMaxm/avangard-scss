@@ -144,8 +144,9 @@ img {
 }
 
 .logo {
-  font-size: 30px;
-  color: var(--text-color);
+  font-size: 32px;
+  color: #84b0e3;
+  font-family: var(--font-accent);
 }
 
 .title-2 {
@@ -484,6 +485,7 @@ img {
 }
 
 .services {
+  padding: 50px 0;
   position: relative;
 }
 
@@ -497,8 +499,18 @@ img {
 }
 
 .services__cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 30px;
 }
 @media (max-width: 767px) {
@@ -512,6 +524,7 @@ img {
   position: relative;
   display: inline-block;
   color: var(--text-color);
+  max-width: 460px;
 }
 .card::before {
   content: "";
@@ -564,7 +577,8 @@ img {
   left: 50px;
   right: 20px;
   top: 44px;
-  font-size: 24px;
+  font-size: 26px;
+  color: var(--text-color);
 }
 @media (max-width: 1023px) {
   .card__title {
@@ -903,4 +917,51 @@ img {
   -webkit-transition: fill 0.2s, color 0.2s;
   transition: fill 0.2s, color 0.2s;
   fill: #fbce51;
+}
+
+.footer {
+  padding-top: 72px;
+  padding-bottom: 51px;
+  font-size: 14px;
+  letter-spacing: 0.05rem;
+}
+@media (max-width: 1023px) {
+  .footer {
+    padding-top: 36px;
+    padding-bottom: 25px;
+  }
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+@media (max-width: 1023px) {
+  .footer__grid {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 40px 30px;
+  }
+}
+
+.footer__nav-list {
+  display: grid;
+  gap: 15px;
+}
+
+.footer__address {
+  display: grid;
+  gap: 20px;
+}
+
+.footer__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 22px;
+     -moz-column-gap: 22px;
+          column-gap: 22px;
 }

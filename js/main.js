@@ -54,3 +54,9 @@ const swiper2 = new Swiper('.steps__swiper', {
 		},
 	}
 });
+
+
+window.addEventListener('resize', function () {
+	"use strict";
+	window.location.reload();
+});
