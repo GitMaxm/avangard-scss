@@ -61,3 +61,13 @@ img {
 		font-size: 20px;
 	}
 }
+
+.title-4 {
+	font-size: 20px;
+	color: #c1baa2;
+	font-weight: 700;
+
+	@include mediaTablet {
+		font-size: 18px;
+	}
+}

@@ -15,25 +15,16 @@
 
     position: relative;
 
-    padding-top: 128px;
-}
-
-.steps__swiper::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 335px;
-    height: 182px;
-    z-index: 2;
-    top: 0;
-    // background: url(./../img/steps/01-mob.png) no-repeat;
+    background-image: url("./../images/bg-steps.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .steps__swiper-block {
-    display: grid;
-    justify-items: start;
-    grid-template-columns: 36px 239px;
-    gap: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
 }
 
 .steps__swiper-slide {
@@ -46,6 +37,8 @@
     height: 300px !important;
 
     padding: 62px 20px 34px 32px;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .steps__swiper-slide__number {
